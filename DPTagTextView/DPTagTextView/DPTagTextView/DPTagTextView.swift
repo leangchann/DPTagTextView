@@ -96,6 +96,10 @@ open class DPTagTextView: UITextView {
     private var isHashTag = false
     private var tapGesture = UITapGestureRecognizer()
     
+    public override init(frame: CGRect, textContainer: NSTextContainer?) {
+        super.init(frame: frame, textContainer: textContainer)
+        setup()
+    }
     
     // MARK: - init
     required public init?(coder: NSCoder) {
